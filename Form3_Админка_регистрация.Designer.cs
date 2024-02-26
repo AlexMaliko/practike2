@@ -431,12 +431,14 @@ namespace WindowsFormsApp1
             this.созданиеСменToolStripMenuItem.Name = "созданиеСменToolStripMenuItem";
             this.созданиеСменToolStripMenuItem.Size = new System.Drawing.Size(158, 29);
             this.созданиеСменToolStripMenuItem.Text = "Создание смен";
+            this.созданиеСменToolStripMenuItem.Click += new System.EventHandler(this.созданиеСменToolStripMenuItem_Click);
             // 
             // просмотрЗаказовToolStripMenuItem
             // 
             this.просмотрЗаказовToolStripMenuItem.Name = "просмотрЗаказовToolStripMenuItem";
             this.просмотрЗаказовToolStripMenuItem.Size = new System.Drawing.Size(188, 29);
             this.просмотрЗаказовToolStripMenuItem.Text = "Просмотр заказов";
+            this.просмотрЗаказовToolStripMenuItem.Click += new System.EventHandler(this.просмотрЗаказовToolStripMenuItem_Click);
             // 
             // Form3
             // 

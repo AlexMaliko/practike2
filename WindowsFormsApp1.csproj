@@ -75,11 +75,17 @@
     <Compile Include="Form4_админка_смены.Designer.cs">
       <DependentUpon>Form4_админка_смены.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form5_Официантт.cs">
+    <Compile Include="Form7_смены_заказы.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form5_Официантт.Designer.cs">
-      <DependentUpon>Form5_Официантт.cs</DependentUpon>
+    <Compile Include="Form7_смены_заказы.Designer.cs">
+      <DependentUpon>Form7_смены_заказы.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form5_Официант.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form5_Официант.Designer.cs">
+      <DependentUpon>Form5_Официант.cs</DependentUpon>
     </Compile>
     <Compile Include="Form6_Повар.cs">
       <SubType>Form</SubType>
@@ -101,8 +107,11 @@
     <EmbeddedResource Include="Form4_админка_смены.resx">
       <DependentUpon>Form4_админка_смены.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form5_Официантт.resx">
-      <DependentUpon>Form5_Официантт.cs</DependentUpon>
+    <EmbeddedResource Include="Form7_смены_заказы.resx">
+      <DependentUpon>Form7_смены_заказы.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form5_Официант.resx">
+      <DependentUpon>Form5_Официант.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form6_Повар.resx">
       <DependentUpon>Form6_Повар.cs</DependentUpon>

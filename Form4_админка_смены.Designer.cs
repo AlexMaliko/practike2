@@ -54,6 +54,8 @@ namespace WindowsFormsApp1
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.сменыBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.сменыDataGridView = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.составBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.составDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -80,8 +82,10 @@ namespace WindowsFormsApp1
             this.bindingNavigatorSeparator5 = new System.Windows.Forms.ToolStripSeparator();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.регистрацияПользователейToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.созданиеСменToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.просмотрЗаказовToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             код_составLabel = new System.Windows.Forms.Label();
             код_сменыLabel = new System.Windows.Forms.Label();
             сотрудникLabel = new System.Windows.Forms.Label();
@@ -96,6 +100,7 @@ namespace WindowsFormsApp1
             ((System.ComponentModel.ISupportInitialize)(this.сотрудникиBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
             this.bindingNavigator1.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // код_составLabel
@@ -167,6 +172,7 @@ namespace WindowsFormsApp1
             this.сменыBindingNavigator.BindingSource = this.сменыBindingSource;
             this.сменыBindingNavigator.CountItem = this.bindingNavigatorCountItem;
             this.сменыBindingNavigator.DeleteItem = this.bindingNavigatorDeleteItem;
+            this.сменыBindingNavigator.Dock = System.Windows.Forms.DockStyle.None;
             this.сменыBindingNavigator.Font = new System.Drawing.Font("Segoe UI", 14F);
             this.сменыBindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.bindingNavigatorMoveFirstItem,
@@ -181,7 +187,7 @@ namespace WindowsFormsApp1
             this.bindingNavigatorAddNewItem,
             this.bindingNavigatorDeleteItem,
             this.сменыBindingNavigatorSaveItem});
-            this.сменыBindingNavigator.Location = new System.Drawing.Point(0, 0);
+            this.сменыBindingNavigator.Location = new System.Drawing.Point(22, 62);
             this.сменыBindingNavigator.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
             this.сменыBindingNavigator.MoveLastItem = this.bindingNavigatorMoveLastItem;
             this.сменыBindingNavigator.MoveNextItem = this.bindingNavigatorMoveNextItem;
@@ -189,7 +195,7 @@ namespace WindowsFormsApp1
             this.сменыBindingNavigator.Name = "сменыBindingNavigator";
             this.сменыBindingNavigator.Padding = new System.Windows.Forms.Padding(0, 0, 2, 0);
             this.сменыBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.сменыBindingNavigator.Size = new System.Drawing.Size(1306, 28);
+            this.сменыBindingNavigator.Size = new System.Drawing.Size(351, 28);
             this.сменыBindingNavigator.TabIndex = 0;
             this.сменыBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -205,7 +211,7 @@ namespace WindowsFormsApp1
             // bindingNavigatorCountItem
             // 
             this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(43, 22);
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(69, 25);
             this.bindingNavigatorCountItem.Text = "для {0}";
             this.bindingNavigatorCountItem.ToolTipText = "Общее число элементов";
             // 
@@ -215,7 +221,7 @@ namespace WindowsFormsApp1
             this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
             this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
             this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 25);
             this.bindingNavigatorDeleteItem.Text = "Удалить";
             // 
             // bindingNavigatorMoveFirstItem
@@ -224,7 +230,7 @@ namespace WindowsFormsApp1
             this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
             this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
             this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(23, 25);
             this.bindingNavigatorMoveFirstItem.Text = "Переместить в начало";
             // 
             // bindingNavigatorMovePreviousItem
@@ -233,13 +239,13 @@ namespace WindowsFormsApp1
             this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
             this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
             this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(23, 25);
             this.bindingNavigatorMovePreviousItem.Text = "Переместить назад";
             // 
             // bindingNavigatorSeparator
             // 
             this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 25);
+            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 28);
             // 
             // bindingNavigatorPositionItem
             // 
@@ -254,7 +260,7 @@ namespace WindowsFormsApp1
             // bindingNavigatorSeparator1
             // 
             this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
-            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 25);
+            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 28);
             // 
             // bindingNavigatorMoveNextItem
             // 
@@ -262,7 +268,7 @@ namespace WindowsFormsApp1
             this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
             this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
             this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(23, 25);
             this.bindingNavigatorMoveNextItem.Text = "Переместить вперед";
             // 
             // bindingNavigatorMoveLastItem
@@ -271,20 +277,20 @@ namespace WindowsFormsApp1
             this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
             this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
             this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(23, 25);
             this.bindingNavigatorMoveLastItem.Text = "Переместить в конец";
             // 
             // bindingNavigatorSeparator2
             // 
             this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
-            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
+            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 28);
             // 
             // сменыBindingNavigatorSaveItem
             // 
             this.сменыBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.сменыBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("сменыBindingNavigatorSaveItem.Image")));
             this.сменыBindingNavigatorSaveItem.Name = "сменыBindingNavigatorSaveItem";
-            this.сменыBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 22);
+            this.сменыBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 25);
             this.сменыBindingNavigatorSaveItem.Text = "Сохранить данные";
             this.сменыBindingNavigatorSaveItem.Click += new System.EventHandler(this.сменыBindingNavigatorSaveItem_Click);
             // 
@@ -298,11 +304,24 @@ namespace WindowsFormsApp1
             this.dataGridViewTextBoxColumn2});
             this.сменыDataGridView.DataSource = this.сменыBindingSource;
             this.сменыDataGridView.Location = new System.Drawing.Point(22, 96);
-            this.сменыDataGridView.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.сменыDataGridView.Margin = new System.Windows.Forms.Padding(6);
             this.сменыDataGridView.Name = "сменыDataGridView";
             this.сменыDataGridView.Size = new System.Drawing.Size(442, 406);
             this.сменыDataGridView.TabIndex = 1;
             this.сменыDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.сменыDataGridView_CellContentClick);
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "Код_смены";
+            this.dataGridViewTextBoxColumn1.HeaderText = "Номер смены";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "Дата";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Дата";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
             // 
             // составBindingSource
             // 
@@ -320,7 +339,7 @@ namespace WindowsFormsApp1
             this.dataGridViewTextBoxColumn5});
             this.составDataGridView.DataSource = this.сменыСоставBindingSource;
             this.составDataGridView.Location = new System.Drawing.Point(496, 96);
-            this.составDataGridView.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.составDataGridView.Margin = new System.Windows.Forms.Padding(6);
             this.составDataGridView.Name = "составDataGridView";
             this.составDataGridView.Size = new System.Drawing.Size(633, 406);
             this.составDataGridView.TabIndex = 2;
@@ -353,7 +372,7 @@ namespace WindowsFormsApp1
             // 
             this.код_составTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.сменыСоставBindingSource, "Код_состав", true));
             this.код_составTextBox.Location = new System.Drawing.Point(1456, 299);
-            this.код_составTextBox.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.код_составTextBox.Margin = new System.Windows.Forms.Padding(6);
             this.код_составTextBox.Name = "код_составTextBox";
             this.код_составTextBox.Size = new System.Drawing.Size(219, 29);
             this.код_составTextBox.TabIndex = 4;
@@ -362,7 +381,7 @@ namespace WindowsFormsApp1
             // 
             this.код_сменыTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.сменыСоставBindingSource, "Код_смены", true));
             this.код_сменыTextBox.Location = new System.Drawing.Point(1456, 347);
-            this.код_сменыTextBox.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.код_сменыTextBox.Margin = new System.Windows.Forms.Padding(6);
             this.код_сменыTextBox.Name = "код_сменыTextBox";
             this.код_сменыTextBox.Size = new System.Drawing.Size(219, 29);
             this.код_сменыTextBox.TabIndex = 6;
@@ -374,7 +393,7 @@ namespace WindowsFormsApp1
             this.сотрудникComboBox.DisplayMember = "ФИО";
             this.сотрудникComboBox.FormattingEnabled = true;
             this.сотрудникComboBox.Location = new System.Drawing.Point(1456, 395);
-            this.сотрудникComboBox.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.сотрудникComboBox.Margin = new System.Windows.Forms.Padding(6);
             this.сотрудникComboBox.Name = "сотрудникComboBox";
             this.сотрудникComboBox.Size = new System.Drawing.Size(219, 32);
             this.сотрудникComboBox.TabIndex = 8;
@@ -394,7 +413,7 @@ namespace WindowsFormsApp1
             this.button1.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Location = new System.Drawing.Point(22, 513);
-            this.button1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.button1.Margin = new System.Windows.Forms.Padding(6);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(215, 40);
             this.button1.TabIndex = 49;
@@ -411,7 +430,7 @@ namespace WindowsFormsApp1
             this.button3.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button3.ForeColor = System.Drawing.Color.White;
             this.button3.Location = new System.Drawing.Point(496, 514);
-            this.button3.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.button3.Margin = new System.Windows.Forms.Padding(6);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(215, 40);
             this.button3.TabIndex = 51;
@@ -457,13 +476,13 @@ namespace WindowsFormsApp1
             this.bindingNavigatorAddNewItem1.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem1.Image")));
             this.bindingNavigatorAddNewItem1.Name = "bindingNavigatorAddNewItem1";
             this.bindingNavigatorAddNewItem1.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem1.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorAddNewItem1.Size = new System.Drawing.Size(23, 25);
             this.bindingNavigatorAddNewItem1.Text = "Добавить";
             // 
             // bindingNavigatorCountItem1
             // 
             this.bindingNavigatorCountItem1.Name = "bindingNavigatorCountItem1";
-            this.bindingNavigatorCountItem1.Size = new System.Drawing.Size(43, 22);
+            this.bindingNavigatorCountItem1.Size = new System.Drawing.Size(69, 25);
             this.bindingNavigatorCountItem1.Text = "для {0}";
             this.bindingNavigatorCountItem1.ToolTipText = "Общее число элементов";
             // 
@@ -473,7 +492,7 @@ namespace WindowsFormsApp1
             this.bindingNavigatorDeleteItem1.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem1.Image")));
             this.bindingNavigatorDeleteItem1.Name = "bindingNavigatorDeleteItem1";
             this.bindingNavigatorDeleteItem1.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem1.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorDeleteItem1.Size = new System.Drawing.Size(23, 25);
             this.bindingNavigatorDeleteItem1.Text = "Удалить";
             // 
             // bindingNavigatorMoveFirstItem1
@@ -482,7 +501,7 @@ namespace WindowsFormsApp1
             this.bindingNavigatorMoveFirstItem1.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem1.Image")));
             this.bindingNavigatorMoveFirstItem1.Name = "bindingNavigatorMoveFirstItem1";
             this.bindingNavigatorMoveFirstItem1.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveFirstItem1.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveFirstItem1.Size = new System.Drawing.Size(23, 25);
             this.bindingNavigatorMoveFirstItem1.Text = "Переместить в начало";
             // 
             // bindingNavigatorMovePreviousItem1
@@ -491,13 +510,13 @@ namespace WindowsFormsApp1
             this.bindingNavigatorMovePreviousItem1.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem1.Image")));
             this.bindingNavigatorMovePreviousItem1.Name = "bindingNavigatorMovePreviousItem1";
             this.bindingNavigatorMovePreviousItem1.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMovePreviousItem1.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMovePreviousItem1.Size = new System.Drawing.Size(23, 25);
             this.bindingNavigatorMovePreviousItem1.Text = "Переместить назад";
             // 
             // bindingNavigatorSeparator3
             // 
             this.bindingNavigatorSeparator3.Name = "bindingNavigatorSeparator3";
-            this.bindingNavigatorSeparator3.Size = new System.Drawing.Size(6, 25);
+            this.bindingNavigatorSeparator3.Size = new System.Drawing.Size(6, 28);
             // 
             // bindingNavigatorPositionItem1
             // 
@@ -512,7 +531,7 @@ namespace WindowsFormsApp1
             // bindingNavigatorSeparator4
             // 
             this.bindingNavigatorSeparator4.Name = "bindingNavigatorSeparator4";
-            this.bindingNavigatorSeparator4.Size = new System.Drawing.Size(6, 25);
+            this.bindingNavigatorSeparator4.Size = new System.Drawing.Size(6, 28);
             // 
             // bindingNavigatorMoveNextItem1
             // 
@@ -520,7 +539,7 @@ namespace WindowsFormsApp1
             this.bindingNavigatorMoveNextItem1.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem1.Image")));
             this.bindingNavigatorMoveNextItem1.Name = "bindingNavigatorMoveNextItem1";
             this.bindingNavigatorMoveNextItem1.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem1.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveNextItem1.Size = new System.Drawing.Size(23, 25);
             this.bindingNavigatorMoveNextItem1.Text = "Переместить вперед";
             // 
             // bindingNavigatorMoveLastItem1
@@ -529,13 +548,13 @@ namespace WindowsFormsApp1
             this.bindingNavigatorMoveLastItem1.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem1.Image")));
             this.bindingNavigatorMoveLastItem1.Name = "bindingNavigatorMoveLastItem1";
             this.bindingNavigatorMoveLastItem1.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem1.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveLastItem1.Size = new System.Drawing.Size(23, 25);
             this.bindingNavigatorMoveLastItem1.Text = "Переместить в конец";
             // 
             // bindingNavigatorSeparator5
             // 
             this.bindingNavigatorSeparator5.Name = "bindingNavigatorSeparator5";
-            this.bindingNavigatorSeparator5.Size = new System.Drawing.Size(6, 25);
+            this.bindingNavigatorSeparator5.Size = new System.Drawing.Size(6, 28);
             // 
             // button4
             // 
@@ -546,7 +565,7 @@ namespace WindowsFormsApp1
             this.button4.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button4.ForeColor = System.Drawing.Color.White;
             this.button4.Location = new System.Drawing.Point(723, 515);
-            this.button4.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.button4.Margin = new System.Windows.Forms.Padding(6);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(215, 40);
             this.button4.TabIndex = 53;
@@ -563,31 +582,52 @@ namespace WindowsFormsApp1
             this.button5.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button5.ForeColor = System.Drawing.Color.White;
             this.button5.Location = new System.Drawing.Point(249, 514);
-            this.button5.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.button5.Margin = new System.Windows.Forms.Padding(6);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(215, 40);
             this.button5.TabIndex = 54;
             this.button5.Text = "Обновить";
             this.button5.UseVisualStyleBackColor = false;
             // 
-            // dataGridViewTextBoxColumn1
+            // menuStrip1
             // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "Код_смены";
-            this.dataGridViewTextBoxColumn1.HeaderText = "Номер смены";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            this.menuStrip1.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.регистрацияПользователейToolStripMenuItem,
+            this.созданиеСменToolStripMenuItem,
+            this.просмотрЗаказовToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(1306, 33);
+            this.menuStrip1.TabIndex = 55;
+            this.menuStrip1.Text = "menuStrip1";
             // 
-            // dataGridViewTextBoxColumn2
+            // регистрацияПользователейToolStripMenuItem
             // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "Дата";
-            this.dataGridViewTextBoxColumn2.HeaderText = "Дата";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.регистрацияПользователейToolStripMenuItem.Name = "регистрацияПользователейToolStripMenuItem";
+            this.регистрацияПользователейToolStripMenuItem.Size = new System.Drawing.Size(273, 29);
+            this.регистрацияПользователейToolStripMenuItem.Text = "Регистрация пользователей";
+            this.регистрацияПользователейToolStripMenuItem.Click += new System.EventHandler(this.регистрацияПользователейToolStripMenuItem_Click);
+            // 
+            // созданиеСменToolStripMenuItem
+            // 
+            this.созданиеСменToolStripMenuItem.Name = "созданиеСменToolStripMenuItem";
+            this.созданиеСменToolStripMenuItem.Size = new System.Drawing.Size(158, 29);
+            this.созданиеСменToolStripMenuItem.Text = "Создание смен";
+            // 
+            // просмотрЗаказовToolStripMenuItem
+            // 
+            this.просмотрЗаказовToolStripMenuItem.Name = "просмотрЗаказовToolStripMenuItem";
+            this.просмотрЗаказовToolStripMenuItem.Size = new System.Drawing.Size(188, 29);
+            this.просмотрЗаказовToolStripMenuItem.Text = "Просмотр заказов";
+            this.просмотрЗаказовToolStripMenuItem.Click += new System.EventHandler(this.просмотрЗаказовToolStripMenuItem_Click);
             // 
             // Form4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1306, 789);
+            this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.bindingNavigator1);
@@ -603,7 +643,7 @@ namespace WindowsFormsApp1
             this.Controls.Add(this.сменыDataGridView);
             this.Controls.Add(this.сменыBindingNavigator);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "Form4";
             this.Text = "Form4";
             this.Load += new System.EventHandler(this.Form4_Load);
@@ -620,6 +660,8 @@ namespace WindowsFormsApp1
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).EndInit();
             this.bindingNavigator1.ResumeLayout(false);
             this.bindingNavigator1.PerformLayout();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -675,5 +717,9 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem регистрацияПользователейToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem созданиеСменToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem просмотрЗаказовToolStripMenuItem;
     }
 }

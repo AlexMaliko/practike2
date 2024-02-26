@@ -85,7 +85,7 @@ namespace WindowsFormsApp1
                 if (role == "Официант")
                 {
                     // Если роль "Администратор" и логин/пароль верны
-                    Form5 form5 = new Form5();
+                    Form5_Официант form5 = new Form5_Официант();
                     form5.Show();
                     this.Hide();
 
