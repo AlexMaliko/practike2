@@ -87,6 +87,7 @@
             this.кодпозицииDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.количествоDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.блюдоDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label3 = new System.Windows.Forms.Label();
             код_заказаLabel = new System.Windows.Forms.Label();
             столикLabel = new System.Windows.Forms.Label();
             количество_клиентовLabel = new System.Windows.Forms.Label();
@@ -108,7 +109,7 @@
             // код_заказаLabel
             // 
             код_заказаLabel.AutoSize = true;
-            код_заказаLabel.Location = new System.Drawing.Point(12, 61);
+            код_заказаLabel.Location = new System.Drawing.Point(12, 188);
             код_заказаLabel.Name = "код_заказаLabel";
             код_заказаLabel.Size = new System.Drawing.Size(97, 24);
             код_заказаLabel.TabIndex = 1;
@@ -117,7 +118,7 @@
             // столикLabel
             // 
             столикLabel.AutoSize = true;
-            столикLabel.Location = new System.Drawing.Point(12, 96);
+            столикLabel.Location = new System.Drawing.Point(12, 223);
             столикLabel.Name = "столикLabel";
             столикLabel.Size = new System.Drawing.Size(79, 24);
             столикLabel.TabIndex = 3;
@@ -126,7 +127,7 @@
             // количество_клиентовLabel
             // 
             количество_клиентовLabel.AutoSize = true;
-            количество_клиентовLabel.Location = new System.Drawing.Point(12, 131);
+            количество_клиентовLabel.Location = new System.Drawing.Point(12, 258);
             количество_клиентовLabel.Name = "количество_клиентовLabel";
             количество_клиентовLabel.Size = new System.Drawing.Size(212, 24);
             количество_клиентовLabel.TabIndex = 5;
@@ -135,7 +136,7 @@
             // код_сменыLabel
             // 
             код_сменыLabel.AutoSize = true;
-            код_сменыLabel.Location = new System.Drawing.Point(12, 166);
+            код_сменыLabel.Location = new System.Drawing.Point(12, 293);
             код_сменыLabel.Name = "код_сменыLabel";
             код_сменыLabel.Size = new System.Drawing.Size(113, 24);
             код_сменыLabel.TabIndex = 7;
@@ -162,7 +163,7 @@
             // статусLabel1
             // 
             статусLabel1.AutoSize = true;
-            статусLabel1.Location = new System.Drawing.Point(12, 206);
+            статусLabel1.Location = new System.Drawing.Point(12, 333);
             статусLabel1.Name = "статусLabel1";
             статусLabel1.Size = new System.Drawing.Size(77, 24);
             статусLabel1.TabIndex = 63;
@@ -208,6 +209,7 @@
             this.заказBindingNavigator.BindingSource = this.заказBindingSource;
             this.заказBindingNavigator.CountItem = this.bindingNavigatorCountItem;
             this.заказBindingNavigator.DeleteItem = this.bindingNavigatorDeleteItem;
+            this.заказBindingNavigator.Dock = System.Windows.Forms.DockStyle.None;
             this.заказBindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.bindingNavigatorMoveFirstItem,
             this.bindingNavigatorMovePreviousItem,
@@ -221,14 +223,14 @@
             this.bindingNavigatorAddNewItem,
             this.bindingNavigatorDeleteItem,
             this.заказBindingNavigatorSaveItem});
-            this.заказBindingNavigator.Location = new System.Drawing.Point(0, 0);
+            this.заказBindingNavigator.Location = new System.Drawing.Point(16, 157);
             this.заказBindingNavigator.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
             this.заказBindingNavigator.MoveLastItem = this.bindingNavigatorMoveLastItem;
             this.заказBindingNavigator.MoveNextItem = this.bindingNavigatorMoveNextItem;
             this.заказBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.заказBindingNavigator.Name = "заказBindingNavigator";
             this.заказBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.заказBindingNavigator.Size = new System.Drawing.Size(1052, 25);
+            this.заказBindingNavigator.Size = new System.Drawing.Size(286, 25);
             this.заказBindingNavigator.TabIndex = 0;
             this.заказBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -330,7 +332,7 @@
             // код_заказаTextBox
             // 
             this.код_заказаTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.заказBindingSource, "Код_заказа", true));
-            this.код_заказаTextBox.Location = new System.Drawing.Point(230, 58);
+            this.код_заказаTextBox.Location = new System.Drawing.Point(230, 185);
             this.код_заказаTextBox.Name = "код_заказаTextBox";
             this.код_заказаTextBox.Size = new System.Drawing.Size(158, 29);
             this.код_заказаTextBox.TabIndex = 2;
@@ -338,7 +340,7 @@
             // столикTextBox
             // 
             this.столикTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.заказBindingSource, "Столик", true));
-            this.столикTextBox.Location = new System.Drawing.Point(230, 93);
+            this.столикTextBox.Location = new System.Drawing.Point(230, 220);
             this.столикTextBox.Name = "столикTextBox";
             this.столикTextBox.Size = new System.Drawing.Size(158, 29);
             this.столикTextBox.TabIndex = 4;
@@ -346,7 +348,7 @@
             // количество_клиентовTextBox
             // 
             this.количество_клиентовTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.заказBindingSource, "Количество-клиентов", true));
-            this.количество_клиентовTextBox.Location = new System.Drawing.Point(230, 128);
+            this.количество_клиентовTextBox.Location = new System.Drawing.Point(230, 255);
             this.количество_клиентовTextBox.Name = "количество_клиентовTextBox";
             this.количество_клиентовTextBox.Size = new System.Drawing.Size(158, 29);
             this.количество_клиентовTextBox.TabIndex = 6;
@@ -354,7 +356,7 @@
             // код_сменыTextBox
             // 
             this.код_сменыTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.заказBindingSource, "Код_смены", true));
-            this.код_сменыTextBox.Location = new System.Drawing.Point(230, 163);
+            this.код_сменыTextBox.Location = new System.Drawing.Point(230, 290);
             this.код_сменыTextBox.Name = "код_сменыTextBox";
             this.код_сменыTextBox.Size = new System.Drawing.Size(158, 29);
             this.код_сменыTextBox.TabIndex = 8;
@@ -387,7 +389,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(16, 311);
+            this.button1.Location = new System.Drawing.Point(16, 438);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(372, 45);
             this.button1.TabIndex = 58;
@@ -403,7 +405,7 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(16, 243);
+            this.button3.Location = new System.Drawing.Point(16, 370);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(372, 45);
             this.button3.TabIndex = 57;
@@ -592,7 +594,7 @@
             this.статусComboBox.Items.AddRange(new object[] {
             "Оплачен",
             "Не оплачен"});
-            this.статусComboBox.Location = new System.Drawing.Point(230, 198);
+            this.статусComboBox.Location = new System.Drawing.Point(230, 325);
             this.статусComboBox.Name = "статусComboBox";
             this.статусComboBox.Size = new System.Drawing.Size(158, 32);
             this.статусComboBox.TabIndex = 64;
@@ -610,7 +612,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 25);
+            this.label2.Location = new System.Drawing.Point(12, 120);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(67, 24);
             this.label2.TabIndex = 66;
@@ -638,11 +640,21 @@
             this.блюдоDataGridViewTextBoxColumn.HeaderText = "Блюдо";
             this.блюдоDataGridViewTextBoxColumn.Name = "блюдоDataGridViewTextBoxColumn";
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(16, 69);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(60, 24);
+            this.label3.TabIndex = 67;
+            this.label3.Text = "label3";
+            // 
             // Form5_Официант
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1052, 514);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(статусLabel1);
@@ -739,5 +751,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn блюдоDataGridViewTextBoxColumn;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
     }
 }
