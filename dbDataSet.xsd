@@ -368,7 +368,7 @@
   <xs:element name="dbDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="dbDataSet" msprop:Generator_UserDSName="dbDataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="Заказ" msprop:Generator_TableClassName="ЗаказDataTable" msprop:Generator_TableVarName="tableЗаказ" msprop:Generator_RowChangedName="ЗаказRowChanged" msprop:Generator_TablePropName="Заказ" msprop:Generator_RowDeletingName="ЗаказRowDeleting" msprop:Generator_RowChangingName="ЗаказRowChanging" msprop:Generator_RowEvHandlerName="ЗаказRowChangeEventHandler" msprop:Generator_RowDeletedName="ЗаказRowDeleted" msprop:Generator_RowClassName="ЗаказRow" msprop:Generator_UserTableName="Заказ" msprop:Generator_RowEvArgName="ЗаказRowChangeEvent">
+        <xs:element name="Заказ" msprop:Generator_TableClassName="ЗаказDataTable" msprop:Generator_TableVarName="tableЗаказ" msprop:Generator_TablePropName="Заказ" msprop:Generator_RowDeletingName="ЗаказRowDeleting" msprop:Generator_RowChangingName="ЗаказRowChanging" msprop:Generator_RowEvHandlerName="ЗаказRowChangeEventHandler" msprop:Generator_RowDeletedName="ЗаказRowDeleted" msprop:Generator_UserTableName="Заказ" msprop:Generator_RowChangedName="ЗаказRowChanged" msprop:Generator_RowEvArgName="ЗаказRowChangeEvent" msprop:Generator_RowClassName="ЗаказRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Код_заказа" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="1" msprop:Generator_ColumnVarNameInTable="columnКод_заказа" msprop:Generator_ColumnPropNameInRow="Код_заказа" msprop:Generator_ColumnPropNameInTable="Код_заказаColumn" msprop:Generator_UserColumnName="Код_заказа" type="xs:int" />
@@ -385,7 +385,7 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Меню" msprop:Generator_TableClassName="МенюDataTable" msprop:Generator_TableVarName="tableМеню" msprop:Generator_RowChangedName="МенюRowChanged" msprop:Generator_TablePropName="Меню" msprop:Generator_RowDeletingName="МенюRowDeleting" msprop:Generator_RowChangingName="МенюRowChanging" msprop:Generator_RowEvHandlerName="МенюRowChangeEventHandler" msprop:Generator_RowDeletedName="МенюRowDeleted" msprop:Generator_RowClassName="МенюRow" msprop:Generator_UserTableName="Меню" msprop:Generator_RowEvArgName="МенюRowChangeEvent">
+        <xs:element name="Меню" msprop:Generator_TableClassName="МенюDataTable" msprop:Generator_TableVarName="tableМеню" msprop:Generator_TablePropName="Меню" msprop:Generator_RowDeletingName="МенюRowDeleting" msprop:Generator_RowChangingName="МенюRowChanging" msprop:Generator_RowEvHandlerName="МенюRowChangeEventHandler" msprop:Generator_RowDeletedName="МенюRowDeleted" msprop:Generator_UserTableName="Меню" msprop:Generator_RowChangedName="МенюRowChanged" msprop:Generator_RowEvArgName="МенюRowChangeEvent" msprop:Generator_RowClassName="МенюRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Код_блюда" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnКод_блюда" msprop:Generator_ColumnPropNameInRow="Код_блюда" msprop:Generator_ColumnPropNameInTable="Код_блюдаColumn" msprop:Generator_UserColumnName="Код_блюда" type="xs:int" />
@@ -399,7 +399,7 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Позиции" msprop:Generator_TableClassName="ПозицииDataTable" msprop:Generator_TableVarName="tableПозиции" msprop:Generator_RowChangedName="ПозицииRowChanged" msprop:Generator_TablePropName="Позиции" msprop:Generator_RowDeletingName="ПозицииRowDeleting" msprop:Generator_RowChangingName="ПозицииRowChanging" msprop:Generator_RowEvHandlerName="ПозицииRowChangeEventHandler" msprop:Generator_RowDeletedName="ПозицииRowDeleted" msprop:Generator_RowClassName="ПозицииRow" msprop:Generator_UserTableName="Позиции" msprop:Generator_RowEvArgName="ПозицииRowChangeEvent">
+        <xs:element name="Позиции" msprop:Generator_TableClassName="ПозицииDataTable" msprop:Generator_TableVarName="tableПозиции" msprop:Generator_TablePropName="Позиции" msprop:Generator_RowDeletingName="ПозицииRowDeleting" msprop:Generator_RowChangingName="ПозицииRowChanging" msprop:Generator_RowEvHandlerName="ПозицииRowChangeEventHandler" msprop:Generator_RowDeletedName="ПозицииRowDeleted" msprop:Generator_UserTableName="Позиции" msprop:Generator_RowChangedName="ПозицииRowChanged" msprop:Generator_RowEvArgName="ПозицииRowChangeEvent" msprop:Generator_RowClassName="ПозицииRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Код_позиции" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="1" msprop:Generator_ColumnVarNameInTable="columnКод_позиции" msprop:Generator_ColumnPropNameInRow="Код_позиции" msprop:Generator_ColumnPropNameInTable="Код_позицииColumn" msprop:Generator_UserColumnName="Код_позиции" type="xs:int" />
@@ -428,7 +428,7 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Смены" msprop:Generator_TableClassName="СменыDataTable" msprop:Generator_TableVarName="tableСмены" msprop:Generator_RowChangedName="СменыRowChanged" msprop:Generator_TablePropName="Смены" msprop:Generator_RowDeletingName="СменыRowDeleting" msprop:Generator_RowChangingName="СменыRowChanging" msprop:Generator_RowEvHandlerName="СменыRowChangeEventHandler" msprop:Generator_RowDeletedName="СменыRowDeleted" msprop:Generator_RowClassName="СменыRow" msprop:Generator_UserTableName="Смены" msprop:Generator_RowEvArgName="СменыRowChangeEvent">
+        <xs:element name="Смены" msprop:Generator_TableClassName="СменыDataTable" msprop:Generator_TableVarName="tableСмены" msprop:Generator_TablePropName="Смены" msprop:Generator_RowDeletingName="СменыRowDeleting" msprop:Generator_RowChangingName="СменыRowChanging" msprop:Generator_RowEvHandlerName="СменыRowChangeEventHandler" msprop:Generator_RowDeletedName="СменыRowDeleted" msprop:Generator_UserTableName="Смены" msprop:Generator_RowChangedName="СменыRowChanged" msprop:Generator_RowEvArgName="СменыRowChangeEvent" msprop:Generator_RowClassName="СменыRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Код_смены" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="1" msprop:Generator_ColumnVarNameInTable="columnКод_смены" msprop:Generator_ColumnPropNameInRow="Код_смены" msprop:Generator_ColumnPropNameInTable="Код_сменыColumn" msprop:Generator_UserColumnName="Код_смены" type="xs:int" />
@@ -436,7 +436,7 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Состав" msprop:Generator_TableClassName="СоставDataTable" msprop:Generator_TableVarName="tableСостав" msprop:Generator_RowChangedName="СоставRowChanged" msprop:Generator_TablePropName="Состав" msprop:Generator_RowDeletingName="СоставRowDeleting" msprop:Generator_RowChangingName="СоставRowChanging" msprop:Generator_RowEvHandlerName="СоставRowChangeEventHandler" msprop:Generator_RowDeletedName="СоставRowDeleted" msprop:Generator_RowClassName="СоставRow" msprop:Generator_UserTableName="Состав" msprop:Generator_RowEvArgName="СоставRowChangeEvent">
+        <xs:element name="Состав" msprop:Generator_TableClassName="СоставDataTable" msprop:Generator_TableVarName="tableСостав" msprop:Generator_TablePropName="Состав" msprop:Generator_RowDeletingName="СоставRowDeleting" msprop:Generator_RowChangingName="СоставRowChanging" msprop:Generator_RowEvHandlerName="СоставRowChangeEventHandler" msprop:Generator_RowDeletedName="СоставRowDeleted" msprop:Generator_UserTableName="Состав" msprop:Generator_RowChangedName="СоставRowChanged" msprop:Generator_RowEvArgName="СоставRowChangeEvent" msprop:Generator_RowClassName="СоставRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Код_состав" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="1" msprop:Generator_ColumnVarNameInTable="columnКод_состав" msprop:Generator_ColumnPropNameInRow="Код_состав" msprop:Generator_ColumnPropNameInTable="Код_составColumn" msprop:Generator_UserColumnName="Код_состав" type="xs:int" />
@@ -451,7 +451,7 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Сотрудники" msprop:Generator_TableClassName="СотрудникиDataTable" msprop:Generator_TableVarName="tableСотрудники" msprop:Generator_RowChangedName="СотрудникиRowChanged" msprop:Generator_TablePropName="Сотрудники" msprop:Generator_RowDeletingName="СотрудникиRowDeleting" msprop:Generator_RowChangingName="СотрудникиRowChanging" msprop:Generator_RowEvHandlerName="СотрудникиRowChangeEventHandler" msprop:Generator_RowDeletedName="СотрудникиRowDeleted" msprop:Generator_RowClassName="СотрудникиRow" msprop:Generator_UserTableName="Сотрудники" msprop:Generator_RowEvArgName="СотрудникиRowChangeEvent">
+        <xs:element name="Сотрудники" msprop:Generator_TableClassName="СотрудникиDataTable" msprop:Generator_TableVarName="tableСотрудники" msprop:Generator_TablePropName="Сотрудники" msprop:Generator_RowDeletingName="СотрудникиRowDeleting" msprop:Generator_RowChangingName="СотрудникиRowChanging" msprop:Generator_RowEvHandlerName="СотрудникиRowChangeEventHandler" msprop:Generator_RowDeletedName="СотрудникиRowDeleted" msprop:Generator_UserTableName="Сотрудники" msprop:Generator_RowChangedName="СотрудникиRowChanged" msprop:Generator_RowEvArgName="СотрудникиRowChangeEvent" msprop:Generator_RowClassName="СотрудникиRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Код_Сотрудника" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnКод_Сотрудника" msprop:Generator_ColumnPropNameInRow="Код_Сотрудника" msprop:Generator_ColumnPropNameInTable="Код_СотрудникаColumn" msprop:Generator_UserColumnName="Код_Сотрудника" type="xs:int" />
@@ -522,9 +522,9 @@
   </xs:element>
   <xs:annotation>
     <xs:appinfo>
-      <msdata:Relationship name="СменыЗаказ" msdata:parent="Смены" msdata:child="Заказ" msdata:parentkey="Код_смены" msdata:childkey="Код_смены" msprop:Generator_UserChildTable="Заказ" msprop:Generator_ChildPropName="GetЗаказRows" msprop:Generator_UserRelationName="СменыЗаказ" msprop:Generator_ParentPropName="СменыRow" msprop:Generator_RelationVarName="relationСменыЗаказ" msprop:Generator_UserParentTable="Смены" />
-      <msdata:Relationship name="ЗаказПозиции" msdata:parent="Заказ" msdata:child="Позиции" msdata:parentkey="Код_заказа" msdata:childkey="Код_заказа" msprop:Generator_UserChildTable="Позиции" msprop:Generator_ChildPropName="GetПозицииRows" msprop:Generator_UserRelationName="ЗаказПозиции" msprop:Generator_RelationVarName="relationЗаказПозиции" msprop:Generator_UserParentTable="Заказ" msprop:Generator_ParentPropName="ЗаказRow" />
-      <msdata:Relationship name="СменыСостав" msdata:parent="Смены" msdata:child="Состав" msdata:parentkey="Код_смены" msdata:childkey="Код_смены" msprop:Generator_UserChildTable="Состав" msprop:Generator_ChildPropName="GetСоставRows" msprop:Generator_UserRelationName="СменыСостав" msprop:Generator_RelationVarName="relationСменыСостав" msprop:Generator_UserParentTable="Смены" msprop:Generator_ParentPropName="СменыRow" />
+      <msdata:Relationship name="СменыЗаказ" msdata:parent="Смены" msdata:child="Заказ" msdata:parentkey="Код_смены" msdata:childkey="Код_смены" msprop:Generator_UserChildTable="Заказ" msprop:Generator_ChildPropName="GetЗаказRows" msprop:Generator_UserRelationName="СменыЗаказ" msprop:Generator_RelationVarName="relationСменыЗаказ" msprop:Generator_UserParentTable="Смены" msprop:Generator_ParentPropName="СменыRow" />
+      <msdata:Relationship name="ЗаказПозиции" msdata:parent="Заказ" msdata:child="Позиции" msdata:parentkey="Код_заказа" msdata:childkey="Код_заказа" msprop:Generator_UserChildTable="Позиции" msprop:Generator_ChildPropName="GetПозицииRows" msprop:Generator_UserRelationName="ЗаказПозиции" msprop:Generator_ParentPropName="ЗаказRow" msprop:Generator_RelationVarName="relationЗаказПозиции" msprop:Generator_UserParentTable="Заказ" />
+      <msdata:Relationship name="СменыСостав" msdata:parent="Смены" msdata:child="Состав" msdata:parentkey="Код_смены" msdata:childkey="Код_смены" msprop:Generator_UserChildTable="Состав" msprop:Generator_ChildPropName="GetСоставRows" msprop:Generator_UserRelationName="СменыСостав" msprop:Generator_ParentPropName="СменыRow" msprop:Generator_RelationVarName="relationСменыСостав" msprop:Generator_UserParentTable="Смены" />
     </xs:appinfo>
   </xs:annotation>
 </xs:schema>

@@ -17,59 +17,57 @@ namespace WindowsFormsApp1
             InitializeComponent();
         }
 
-        private void сменыBindingNavigatorSaveItem_Click(object sender, EventArgs e)
-        {
-            this.Validate();
-            this.сменыBindingSource.EndEdit();
-            this.tableAdapterManager.UpdateAll(this.dbDataSet);
-
-        }
-
         private void Form4_Load(object sender, EventArgs e)
         {
             // TODO: данная строка кода позволяет загрузить данные в таблицу "dbDataSet.Сотрудники". При необходимости она может быть перемещена или удалена.
             this.сотрудникиTableAdapter.Fill(this.dbDataSet.Сотрудники);
-            // TODO: данная строка кода позволяет загрузить данные в таблицу "dbDataSet.Состав". При необходимости она может быть перемещена или удалена.
+
             this.составTableAdapter.Fill(this.dbDataSet.Состав);
             // TODO: данная строка кода позволяет загрузить данные в таблицу "dbDataSet.Смены". При необходимости она может быть перемещена или удалена.
             this.сменыTableAdapter.Fill(this.dbDataSet.Смены);
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            
-            this.Validate();
-            this.сменыBindingSource.EndEdit();
-            this.сменыTableAdapter.Update(this.dbDataSet.Смены);
+
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             this.Validate();
-            this.составBindingSource.EndEdit();
-            this.составTableAdapter.Update(this.dbDataSet.Состав);
+            this.сменыBindingSource.EndEdit();
+            this.сменыTableAdapter.Update(this.dbDataSet.Смены);
         }
 
-        private void сменыDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-
+            this.сменыTableAdapter.Update(this.dbDataSet.Смены);
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
+            this.Validate();
+            this.сменыСоставBindingSource.EndEdit();
             this.составTableAdapter.Update(this.dbDataSet.Состав);
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            this.составTableAdapter.Update(this.dbDataSet.Состав);
         }
 
         private void регистрацияПользователейToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Form3 form3 = new Form3();
             form3.Show();
+            this.Hide();
+        }
+
+        private void созданиеСменToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form4 form4 = new Form4();
+            form4.Show();
             this.Hide();
         }
 
